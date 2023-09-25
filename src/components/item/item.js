@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const Item = ( { data, addToCart }) => {
+const Item = ( {data, addToCart}) => {
 
     const { id, image, title, price} = data
 

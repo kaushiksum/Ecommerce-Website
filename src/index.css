@@ -50,7 +50,7 @@ img {
   /* margin: 20px; */
   box-shadow: rgb(189, 189, 192) 0px 15px 15px -5px;
   border-radius: 20px;
-  background-color: #fff;
+   background-color: #fff; 
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;

@@ -74,6 +74,7 @@ import { useCart } from '../../context/cart'
                     <span className="price">${product.price}</span>
                     <span className="cart" onClick={() => addToCart(product)}>
                         <img src="/cart.svg" alt="" />
+                          
                     </span>
                     </div>
                 </div>

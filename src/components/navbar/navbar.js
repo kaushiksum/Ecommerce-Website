@@ -4,13 +4,13 @@ import { useState } from "react"
 const NavBar = ({onSearch, cartItemCount }) => {
 
 
-    const[ searchQuery, setSearchQuery ] = useState('');
+const[ searchQuery, setSearchQuery ] = useState('');
 
-    const handleSubmit = () => {
+const handleSubmit = () => {
 
-        if(searchQuery.trim().length) {
-            onSearch(searchQuery.trim())
-        }
+    if(searchQuery.trim().length) {
+        onSearch(searchQuery.trim())
+    }
 
         setSearchQuery('')
     }

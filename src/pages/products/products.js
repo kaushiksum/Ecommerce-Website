@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { FakeStoreApi } from "../../services/Fake-store-api"
 import { useSearchParams } from "react-router-dom"
 import { Item } from "../../components/item"
-// import { Product } from "../product/product"
+//  import { Product } from "../product/product"
 import { useCart } from "../../context/cart"
 
 
@@ -22,9 +22,9 @@ const Products = () => {
 
             setLoading(true);
 
-            const products = searchQuery ? await FakeStoreApi.
-            fetchProductsBySearchQuery(searchQuery) : await FakeStoreApi.fetchAllProducts();
-            setProducts(products);
+const products = searchQuery ? await FakeStoreApi.
+fetchProductsBySearchQuery(searchQuery) : await FakeStoreApi.fetchAllProducts();
+    setProducts(products);
             setLoading(false)
         }
 

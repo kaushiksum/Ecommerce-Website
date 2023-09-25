@@ -150,6 +150,8 @@
     box-shadow: rgb(229, 229, 230) 0px 15px 15px -5px;
 }
 
+
+
 @media (max-width: 970px) {
     .cartWrapper .grid {
         position: relative;

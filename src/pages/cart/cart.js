@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useCart } from "../../context/cart"
 import "./cart.css"
+import {toast} from 'react-toastify'
 
 const SHIPPING_CHARGES = 29
 
@@ -16,13 +17,15 @@ const Cart = () => {
     }
 
     return (
+        
+
         <div className="cartWrapper">
             <div className="container">
                 {cart.length >= 1 ? (
                     <div className="grid my-5">
                         <div className="cartItem p-3">
                             <h2>Order Summary</h2>
-                            {cart.map((item,i) => (
+                            {cart.map((item,i) =>   (
                                 <div className="item" key={item.product.id}>
                                     <div className="grid py-3">
                                         <div className="itemImage">
@@ -85,11 +88,12 @@ const Cart = () => {
                     </div>
                 ) : (
                     <div className="error">
-                        <p>&#9432; Cart is empty</p>
+                        <p>&#9432; Cart is empty</p>                        
                     </div>
                 )}
             </div>
         </div>
+    
     )
 }
 
