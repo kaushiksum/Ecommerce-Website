@@ -3,7 +3,7 @@ import { useCart } from "../../context/cart"
 import "./cart.css"
 import {toast} from 'react-toastify'
 
-const SHIPPING_CHARGES = 29
+const SHIPPING_CHARGES = 2
 
 const Cart = () => {
     const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
